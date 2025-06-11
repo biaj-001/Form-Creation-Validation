@@ -35,12 +35,12 @@ document.addEventListener('DOMContentLoaded',function(){
     }
 
     // display feedback
-    feedbackDiv.style.display='block';
+    feedbackDiv.style.display="block";
     if(isValid){
         feedbackDiv.textContent="Registration Successful!"
         feedbackDiv.style.color="#28a745"
     }else{
-        feedbackDiv.textContent=messages.join('<br>')
+        feedbackDiv.innerHTML=messages.join('<br>')
         feedbackDiv.style.color="#dc3545"
     }
 
